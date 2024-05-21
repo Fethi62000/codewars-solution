@@ -28,3 +28,41 @@ function makeNegative(num) {
 
 
 
+/*
+Description
+
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+*/
+
+const stringToNumber = function (str) {
+    return (str * 1);
+    return null;
+}
+
+
+/*
+Make a simple function called greet that returns the most-famous "hello world!".
+Style Points
+
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+*/
+// Write a function "greet" that returns "hello world!"
+function greet(amazingword) {
+    let i = 5;
+    do {
+        return "hello world!";
+        i++;
+    } while (i == 5);
+}
+
+/*
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+*/
+
+function booleanToString(b) {
+    return b.toString();
+}

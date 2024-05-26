@@ -86,3 +86,142 @@ function century(year) {
         ;
     }
 }
+
+/*
+Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
+*/
+
+function maps(x) {
+    let map1 = x.map((x) => x * 2)
+    return map1;
+
+}
+
+function sum(a, b) {
+    return a + b;
+}
+let result = sum(8, 2);
+console.log(result);
+
+
+/*
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+invert([]) == []
+
+You can assume that all values are integers. Do not mutate the input array/list.
+*/
+
+function invert(array) {
+
+    if (array > 0) {
+        let arr = array.map((x) => x * 1)
+        return arr;
+    } else {
+        let arr = array.map((x) => x * -1)
+        return arr;
+    }
+}
+
+
+
+function findNeedle(haystack) {
+    // your code here
+
+    return "found the needle at position " + haystack.indexOf("needle");
+
+}
+
+function areYouPlayingBanjo(name) {
+    // Implement me
+    console.log(name);
+
+    let arr = name.split("")
+    console.log(arr)
+    if (arr[0] === ("r")) {
+        return `${name} plays banjo`;
+    } else if (arr[0] === ("R")) {
+        return `${name} plays banjo`;
+    } else {
+        return `${name} does not play banjo`;
+    }
+}
+
+function findAverage(array) {
+    // your code here
+    console.log(array);
+    if (array.lenght != 0) {
+        return array.reduce((a, b) => a + b) / array.length;
+    } else {
+        return 0;
+    }
+
+}
+
+function smash(words) {
+    return words.join(" ");
+
+
+
+};
+
+function grow(x) {
+    let result = 1
+    for (let i = 0; i < x.length; i++) {
+        result *= x[i];
+    }
+    return result;
+}
+
+function fakeBin(x) {
+
+    let str = x.split("")
+    let map1 = str.map(x => x < 5 ? "0" : "1")
+
+    return map1.join("");
+
+}
+
+function DNAtoRNA(dna) {
+    // TODO
+    return dna.replace(/T/g, "U");
+}
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    // TODO
+
+    if (distanceToPump <= mpg * fuelLeft) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function stringToArray(string) {
+    return string.split(' ');
+}
+
+function countBy(x, n) {
+    let z = [];
+    for (let i = 1; i <= n; i++) {
+        z.push(x * i);
+    }
+    return z;
+
+}
+
+function isDivisible(n, x, y) {
+    if (n % x == 0 && n % y == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
